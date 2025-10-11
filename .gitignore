@@ -1,0 +1,16 @@
+# Airflow webserver PID, Airflow configuration, and Airflow database files
+airflow-webserver.pid
+airflow.cfg
+airflow.db
+
+# Airflow logs directory
+logs/
+
+# Airflow webserver configuration file
+webserver_config.py
+
+# Python bytecode
+dags/__pycache__/simple_hello_world.cpython-311.pyc
+
+# env file 
+.env
