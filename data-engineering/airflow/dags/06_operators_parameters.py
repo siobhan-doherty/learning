@@ -1,8 +1,8 @@
 import time
-from datetime import datetime, timedelta
-from airflow.utils.dates import days_ago
+from datetime import datetime
 from airflow import DAG 
 from airflow.operators.python import PythonOperator
+
 
 default_args = {
     'owner': 'siobhan.doherty'
@@ -15,10 +15,10 @@ def greet_goodbye(name, city):
     print("Hello, {name} from {city}".format(name=name, city=city))
 
 with DAG(
-    dag_id = 'execute_python_operators_III', 
+    dag_id = 'python_operator_parameters', 
     description = 'Python operators in DAGs',
     default_args = default_args, 
-    start_date = days_ago(1),
+    start_date = datetime(2024, 1, 1),
     schedule_interval = '@daily',
     tags = ['parameters', 'python']
 ) as dag:

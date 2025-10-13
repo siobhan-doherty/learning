@@ -1,17 +1,17 @@
 from datetime import datetime, timedelta
-from airflow.utils.dates import days_ago
 from airflow import DAG
 from airflow.operators.bash import BashOperator
+
 
 default_args = {
     'owner': 'siobhan.doherty'
 }
 
 with DAG(
-    dag_id = 'executing_multiple_tasks_part_two',
+    dag_id = 'bash_operator_complex_dependencies',
     description = 'DAG with multiple tasks and dependencies part II',
     default_args = default_args,
-    start_date = days_ago(1),
+    start_date = datetime(2024, 1, 1),
     schedule_interval = timedelta(days=1),
     tags = ['upstream', 'downstream']
 ) as dag:
