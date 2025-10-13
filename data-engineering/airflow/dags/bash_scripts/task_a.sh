@@ -1,3 +1,4 @@
+#!/bin/bash
 echo TASK A has started!
 
 for i in {1..10}
