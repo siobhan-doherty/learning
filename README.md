@@ -1,3 +1,6 @@
-Apache Airflow tutorial via LinkedIn 
-- https://github.com/siobhan-doherty/learning/tree/main/data-engineering/airflow
+# learning
+- Blockchain (Solidity, Aave, Chainlink) 
+- Data Engineering (Airflow, Kafka)
+- Web Development (GraphQL, Puppeteer)
 
+Experiments and tutorials from my ongoing learning journey.
